@@ -1,0 +1,49 @@
+
+GET http://localhost:3000/usuarios
+Content-Type: application/json
+
+
+{
+
+}
+
+###
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Felipe Cesar",
+  "email": "lipe@email.com",
+  "senha": "lipe",
+  "curso": "Sistemas para Internet",
+  "disciplina": "",
+  "periodo": "1°",
+  "tipoUsuario": "aluno"
+}
+
+###
+PUT http://localhost:3000/usuarios/67103f865e99546bc463039f
+Content-Type: application/json
+
+
+{
+  "nome": "Messi Silva",
+  "email": "fifa@email.com",
+  "senha": "ladr",
+  "curso": "Sistemas para Internet",
+  "disciplina": "",
+  "periodo": "3°",
+  "tipoUsuario": "aluno"
+}
+###
+DELETE http://localhost:3000/usuarios/67103a860849c27281c394c8
+Content-Type: application/json
+
+###
+POST http://localhost:3000/usuarios/login
+Content-Type: application/json
+
+{
+  "email": "lipe@email.com",
+  "senha": "lipe"
+}
